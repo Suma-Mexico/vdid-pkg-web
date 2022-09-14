@@ -1,11 +1,11 @@
 {
-    "name": "suma/vdid-pkg-web",
+    "name": "suma-mexico/vdid-pkg-web",
     "description": "Easiest way to implement verification id.",
     "type": "library",
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Suma\\VdidPkgWeb\\": "src/"
+            "SumaMexico\\VdidPkgWeb\\": "src/"
         }
     },
     "authors": [
