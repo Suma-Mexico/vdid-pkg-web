@@ -5,7 +5,7 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "SumaMexico\\VdidPkgWeb\\": "src/web_verification.php"
+            "SumaMexico\\VdidPkgWeb\\": "src/"
         }
     },
     "authors": [
