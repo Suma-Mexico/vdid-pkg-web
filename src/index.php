@@ -1,6 +1,6 @@
 <?php
 
-namespace SumaMexicoVdidPkgWeb;
+namespace SumaMexico\VdidPkgWeb;
 
 include "services/popup.php";
 include "services/redirect.php";
