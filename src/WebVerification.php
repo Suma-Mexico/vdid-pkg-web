@@ -2,7 +2,7 @@
 
 namespace VdidPkgWeb;
 
-include "helpers/index.php";
+include "helpers/redirect.php";
 
 class WebVerification
 {
@@ -17,10 +17,6 @@ class WebVerification
     {
         $key = self::$api_key;
 
-        if ($method === 'popup') {
-            popup($key, $identifier);
-        } else {
-            redirect($key, $identifier);
-        }
+        redirect($key, $identifier, $method);
     }
 }
