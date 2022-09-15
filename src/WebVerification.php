@@ -13,14 +13,9 @@ class WebVerification
         $this->api_key = $api_key;
     }
 
-    private function getApiKey()
-    {
-        return $this->api_key;
-    }
-
     public static function verifyIdentity(string $identifier, string $method = 'redirect')
     {
-        $key = self::getApiKey();
+        $key = self::$api_key;
 
         if ($method === 'popup') {
             return $key . $identifier;
