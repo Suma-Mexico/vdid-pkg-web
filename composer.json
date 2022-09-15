@@ -8,9 +8,8 @@
             "SumaMexico\\VdidPkgWeb\\": "src/"
         },
         "files": [
-            "src/helpers/popup.php",
-            "src/helpers/redirect.php",
-            "src/constants/index.php"
+            "src/helpers.php",
+            "src/constants.php"
         ]
     },
     "authors": [
