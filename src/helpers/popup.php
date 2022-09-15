@@ -1,5 +1,5 @@
 <?php
-include '../constants/index.php';
+include 'constants/index.php';
 
 function popup(string $api_key, string $identifier)
 {

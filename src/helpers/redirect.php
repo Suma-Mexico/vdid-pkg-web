@@ -1,5 +1,5 @@
 <?php
-include '../constants/index.php';
+include 'constants/index.php';
 
 function redirect(string $api_key, string $identifier)
 {
