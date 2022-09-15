@@ -27,4 +27,9 @@ class WebVerification
         }
         return redirect($key, $identifier);
     }
+
+    public static function greet()
+    {
+        echo "Web Verification Start";
+    }
 }
