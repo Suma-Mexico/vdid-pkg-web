@@ -18,8 +18,8 @@ class WebVerification
         $key = self::$api_key;
 
         if ($method === 'popup') {
-            return $key . $identifier;
+            return popup($key, $identifier);
         }
-        return $key . $method;
+        return redirect($key, $identifier);
     }
 }
