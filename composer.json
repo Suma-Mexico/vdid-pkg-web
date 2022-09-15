@@ -6,7 +6,12 @@
     "autoload": {
         "psr-4": {
             "SumaMexico\\VdidPkgWeb\\": "src/"
-        }
+        },
+        "files": [
+            "src/helpers/popup.php",
+            "src/helpers/redirect.php",
+            "src/constants/index.php"
+        ]
     },
     "authors": [
         {
