@@ -31,3 +31,7 @@ composer require suma-mexico/vdid-pkg-web
    If you want to open a popup instead to redirect, you will call the function like the following line:<br/>
 
    > $vdid::verifyIdentity(uuid, 'popup')
+
+   If you want to open a new tab instead to redirect, you will call the function like the following line:<br/>
+
+   > $vdid::verifyIdentity(uuid, 'open')
