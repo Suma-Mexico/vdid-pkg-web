@@ -21,14 +21,10 @@ class WebVerification
     public static function verifyIdentity(string $identifier, string $method = 'redirect')
     {
         $key = self::getApiKey();
-        if ($method === 'popup') {
-            return popup($key, $identifier);
-        }
-        return redirect($key, $identifier);
-    }
 
-    public static function greet()
-    {
-        echo "Web Verification Start";
+        if ($method === 'popup') {
+            return $key . $identifier;
+        }
+        return $key . $method;
     }
 }
