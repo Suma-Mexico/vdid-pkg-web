@@ -2,7 +2,8 @@
 
 namespace VdidPkgWeb;
 
-include "helpers/index.php";
+include "helpers/popup.php";
+include "helpers/redirect.php";
 
 class WebVerification
 {
