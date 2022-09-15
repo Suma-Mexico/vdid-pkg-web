@@ -14,7 +14,7 @@ class WebVerification
         $this->api_key = $api_key;
     }
 
-    public function getApiKey()
+    private function getApiKey()
     {
         return $this->api_key;
     }
@@ -23,9 +23,8 @@ class WebVerification
     {
         $key = self::getApiKey();
         if ($method === 'popup') {
-            popup($key, $identifier);
-        } else {
-            redirect($key, $identifier);
+            return popup($key, $identifier);
         }
+        return redirect($key, $identifier);
     }
 }
