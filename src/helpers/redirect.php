@@ -16,5 +16,5 @@ function redirect(string $api_key, string $identifier)
     $url = $front_url . "?state=" . $json_base64;
     $link = "Location: " . $url;
 
-    return $link;
+    header($link);
 }
