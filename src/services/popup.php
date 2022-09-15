@@ -16,5 +16,5 @@ function popup(string $api_key, string $identifier)
     $url = $front_url . "?state=" . $json_base64;
     $link = "<script>window.open(" . $url . ")</script>";
 
-    echo $link;
+    return $link;
 }

@@ -17,5 +17,5 @@ function redirect(string $api_key, string $identifier)
     $link = "<script>window.open(" . $url . ",popUpWindow,
     height=600,width=400,left=100,top=100,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no,status=yes)</script>";
 
-    echo $link;
+    return $link;
 }
