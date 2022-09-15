@@ -8,9 +8,9 @@ class WebVerification
 {
     protected static string $api_key;
 
-    public function __construct(string $api_key)
+    public function __construct(string $key)
     {
-        $this->api_key = $api_key;
+        self::$api_key = $key;
     }
 
     public static function verifyIdentity(string $identifier, string $method = 'redirect')
