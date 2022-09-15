@@ -6,7 +6,7 @@ include "helpers.php";
 
 class WebVerification
 {
-    protected string $api_key;
+    protected static string $api_key;
 
     public function __construct(string $api_key)
     {
