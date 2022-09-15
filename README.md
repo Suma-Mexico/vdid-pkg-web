@@ -18,14 +18,15 @@ composer require suma-mexico/vdid-pkg-web
 
 2. Once you have imported the library, you have to initialize the object like this.<br/>
 
-   > $vdid = new VdidPkgWeb\WebVerification(api-key)
+   > $vdid = new VdidPkgWeb\WebVerification(api-key);
 
    You have to send the public api-key when you initialize it.<br/>
    api-key: string.
 
 3. When you have [created the verification](https://documenter.getpostman.com/view/13807324/TW6xooD3#6d48e323-7466-48f5-a34e-dfb2c10588ac) and you get the uuid, you will call a function to start the process to upload files and send it, like the following line:<br/>
 
-   > vdid::verifyIdentity(uuid)
+   > $link_to_go = $vdid::verifyIdentity(uuid);
+   > header($link_to_go);
 
    uuid: string<br/>
    If you want to open a popup instead to redirect, you will call the function like the following line:<br/>
