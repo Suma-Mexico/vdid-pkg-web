@@ -2,7 +2,7 @@
 
 namespace VdidPkgWeb;
 
-include "helpers.php";
+include "helpers/index.php";
 
 class WebVerification
 {
